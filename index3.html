@@ -9,9 +9,9 @@
 <a href="index4.html">Order Goods</a>
 </nav>
 <br>
-<button onclick="n7function()">CLICK</button>
-<button onclick="n8function()">CLICK</button>
-<button onclick="n9function()">CLICK</button><br>
+<button class="button7" onclick="n7function()" style="vertical-align:middle"><span>CLICK</span></button>
+<button class="button8" onclick="n8function()" style="vertical-align:middle"><span>CLICK</span></button>
+<button class="button9" onclick="n9function()" style="vertical-align:middle"><span>CLICK</span></button><br>
 <h1>Free Map</h1><br>
 
     <script type="text/javascript" src="http://maps.googleapis.com/maps/api/js?v=3&amp;sensor=false"></script>
@@ -27,10 +27,135 @@ padding: 20px;
 overflow: hidden;
 background-color: black;
 }
-    body {
-      background-color: grey;
-    }
-    </style>
+body {
+background-color: grey;
+}
+
+
+.button7 {
+  display: inline-block;
+  border-radius: 4px;
+  background-color: red;
+  color: #FFFFFF;
+  text-align: center;
+  font-size: 28px;
+  padding: 20px;
+  width: 200px;
+  transition: all 0.5s;
+  cursor: pointer;
+  margin: 5px;
+}
+.button7:hover {
+  background-color: orangered;
+}
+
+.button7 span {
+  cursor: pointer;
+  display: inline-block;
+  position: relative;
+  transition: 0.5s;
+}
+
+.button7 span:after {
+  content: '\00bb';
+  position: absolute;
+  opacity: 0;
+  top: 0;
+  right: -20px;
+  transition: 0.5s;
+}
+
+.button7:hover span {
+  padding-right: 25px;
+}
+
+.button7:hover span:after {
+  opacity: 1;
+  right: 0;
+}
+
+.button8 {
+  display: inline-block;
+  border-radius: 4px;
+  background-color: orangered;
+  color: #FFFFFF;
+  text-align: center;
+  font-size: 28px;
+  padding: 20px;
+  width: 200px;
+  transition: all 0.5s;
+  cursor: pointer;
+  margin: 5px;
+}
+.button8:hover {
+  background-color: orange;
+}
+.button8 span {
+  cursor: pointer;
+  display: inline-block;
+  position: relative;
+  transition: 0.5s;
+}
+
+.button8 span:after {
+  content: '\00bb';
+  position: absolute;
+  opacity: 0;
+  top: 0;
+  right: -20px;
+  transition: 0.5s;
+}
+
+.button8:hover span {
+  padding-right: 25px;
+}
+
+.button8:hover span:after {
+  opacity: 1;
+  right: 0;
+}
+
+.button9 {
+  display: inline-block;
+  border-radius: 4px;
+  background-color: orange;
+  color: black;
+  text-align: center;
+  font-size: 28px;
+  padding: 20px;
+  width: 200px;
+  transition: all 0.5s;
+  cursor: pointer;
+  margin: 5px;
+}
+.button9:hover {
+  background-color: rgb(255, 208, 0);
+}
+.button9 span {
+  cursor: pointer;
+  display: inline-block;
+  position: relative;
+  transition: 0.5s;
+}
+
+.button9 span:after {
+  content: '\00bb';
+  position: absolute;
+  opacity: 0;
+  top: 0;
+  right: -20px;
+  transition: 0.5s;
+}
+
+.button9:hover span {
+  padding-right: 25px;
+}
+
+.button9:hover span:after {
+  opacity: 1;
+  right: 0;
+}
+</style>
 <script src="script.js"></script>
 
 </body>

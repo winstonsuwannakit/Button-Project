@@ -9,9 +9,9 @@
 <a href="index4.html">Order Goods</a>
 </nav>
 <br>
-<button onclick="n10function()">CLICK</button>
-<button onclick="n11function()">CLICK</button>
-<button onclick="n12function()">CLICK</button>
+<button class="button10" onclick="n10function()">CLICK</button>
+<button class="button11" onclick="n11function()">CLICK</button>
+<button class="button12" onclick="n12function()">CLICK</button>
 <br><h1>FOOD ONLY</h1>
 <style>
 h1 {
@@ -29,6 +29,77 @@ background-color: black;
 }
 body {
 background-color: orange;
+}
+.button10 {
+  display: inline-block;
+  font-size: 28px;
+  padding: 20px;
+  width: 200px;
+  cursor: pointer;
+  text-align: center;
+  text-decoration: none;
+  outline: none;
+  color: #fff;
+  background-color: red;
+  border: none;
+  border-radius: 15px;
+  box-shadow: 0 9px #999;
+}
+
+.button10:hover {background-color: rgb(240, 101, 9)}
+
+.button10:active {
+  background-color: red;
+  box-shadow: 0 5px #666;
+  transform: translateY(4px);
+}
+
+.button11 {
+  display: inline-block;
+  font-size: 28px;
+  padding: 20px;
+  width: 200px;
+  cursor: pointer;
+  text-align: center;
+  text-decoration: none;
+  outline: none;
+  color: black;
+  background-color: yellow;
+  border: none;
+  border-radius: 15px;
+  box-shadow: 0 9px #999;
+}
+
+.button11:hover {background-color: greenyellow}
+
+.button11:active {
+  background-color: yellow;
+  box-shadow: 0 5px #666;
+  transform: translateY(4px);
+}
+
+.button12 {
+  display: inline-block;
+  font-size: 28px;
+  padding: 20px;
+  width: 200px;
+  cursor: pointer;
+  text-align: center;
+  text-decoration: none;
+  outline: none;
+  color: #fff;
+  background-color: #4CAF50;
+  border: none;
+  border-radius: 15px;
+  box-shadow: 0 9px #999;
+}
+
+.button12:hover {background-color: #02fa72}
+
+.button12:active {
+  background-color: #3e8e41;
+  box-shadow: 0 5px #666;
+  transform: translateY(4px);
 }
 </style>
 <script src="script.js"></script>

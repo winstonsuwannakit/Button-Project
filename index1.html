@@ -11,15 +11,15 @@
 <br>
 <h1>Welcome to the nothing page</h1>
 <br>
-<button onclick="n1function()">CLICK</button>
-<button onclick="n2function()">CLICK</button>
-<button onclick="n3function()">CLICK</button>
+<button class="button1" onclick="n1function()">CLICK</button>
+<button class="button2" onclick="n2function()">CLICK</button>
+<button class="button3" onclick="n3function()">CLICK</button>
 <style>
 h1 {
-  color : white;
+color: white;
 }
 nav {
-  display: flex;
+display: flex;
 gap: 28.5%;
 align-items: center;
 list-style-type: none;
@@ -29,7 +29,52 @@ overflow: hidden;
 background-color: black;
 }
 body {
-  background-color: black;
+background-color: black;
+}
+.button1 {
+  background-color: white ; 
+  color: black; 
+  border: 2px solid #4CAF50;
+  font-size: 28px;
+  padding: 20px;
+  width: 200px;
+}
+.button1:hover {
+  background-color: #4CAF50;
+  color: white;
+  font-size: 28px;
+  padding: 20px;
+  width: 200px;
+}
+.button2 {
+  background-color: white ; 
+  color: black; 
+  border: 2px solid red;
+  font-size: 28px;
+  padding: 20px;
+  width: 200px;
+}
+.button2:hover {
+  background-color: red;
+  color: white;
+  font-size: 28px;
+  padding: 20px;
+  width: 200px;
+}
+.button3 {
+  background-color: white ; 
+  color: black; 
+  border: 2px solid orange;
+  font-size: 28px;
+  padding: 20px;
+  width: 200px;
+}
+.button3:hover {
+  background-color: orange;
+  color: white;
+  font-size: 28px;
+  padding: 20px;
+  width: 200px;
 }
 </style>
 
